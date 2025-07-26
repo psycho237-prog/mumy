@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#activities">Mes Activités</a></li>
+                <li><a href="#projects">Mes Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <img src="avatar-bernice.jpg" alt="Portrait" class="avatar">
-            <h1>Bernice Lhavy Ebode ONANA</h1>
-            <p class="subtitle">Professeure | Coach des affaires | Membre de More Women in Politics</p>
-            <p class="description">Entrepreneure passionnée par le leadership féminin, l’éducation et le bien-être familial.</p>
+            <h1 class="fade-in">Bernice Lhavy Ebode ONANA</h1>
+            <p class="subtitle fade-in">Professeure | Coach des affaires | Membre de More Women in Politics</p>
+            <p class="description fade-in">Entrepreneure passionnée par le leadership féminin, l’éducation et le bien-être familial.</p>
         </section>
 
-        <section class="section">
+        <section class="section" id="activities">
             <h2>Mes Activités</h2>
             <p class="subtitle">Ce que je fais au quotidien</p>
             <ul>
@@ -26,7 +37,7 @@
             </ul>
         </section>
 
-        <section class="section">
+        <section class="section" id="projects">
             <h2>Mes Projets</h2>
             <p class="subtitle">Quelques initiatives marquantes</p>
             <div class="project-card">
@@ -35,9 +46,30 @@
                     <p>Un institut de beauté et bien-être familial, intégrant un spa, une onglerie et un espace enfants.</p>
                 </a>
             </div>
+            <div class="project-card">
+                <a href="#" class="project-link">
+                    <h3>Coaching Leadership</h3>
+                    <p>Programme de coaching pour aider les femmes à développer leurs compétences en leadership.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>Contact</h2>
+            <p class="subtitle">Restons en contact</p>
+            <form id="contact-form">
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Bernice Lhavy Ebode ONANA. Tous droits réservés.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
-
